@@ -1,0 +1,40 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Upload your completed template
+        span.sr-only.
+        span Object to Additional Provision 1 of the High Speed Rail (West Midlands to Crewe) Bill
+
+      h2.typography--light Step 4 of 5
+
+  section
+    .container
+      h2 Uploaded file must
+
+      ul.list--bullet
+        li be less than 2 MB in size
+        li not include any images, graphics or videos
+
+      br
+
+      +form(action='page07.html')
+        ol.list--pipe__deep
+          li
+            .card
+              figure.svg--icon(data-file-upload='icon')
+                  include ../../icons/file.svg
+              .card__details
+                h3 Upload your petition template
+
+                +input--file('file-uploader', 'fileUpload', 'Choose file', 'btn--primary')(required)
+
+                p(data-file-upload='status') No file(s) selected
+
+        +button('Next', 'btn--primary', 'submit')(id='file-upload-check')
+
+      br
+      .block.accent--mint
+        h3 Help and support
+        p For more information email #[+link('mailto:prbohoc@parliament.uk', 'prbohoc@parliament.uk')] or phone #[+link('tel:02072193250', '020 7219 3250')]

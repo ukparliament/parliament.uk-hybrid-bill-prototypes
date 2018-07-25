@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="108px" viewBox="0 0 100 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>file--fail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="file--fail">
+            <g id="file">
+                <polygon id="Rectangle-5" fill="#FFFFFF" points="0 0 52.8574219 0 86 31.7871094 86 106 0 106"></polygon>
+                <g id="Group" stroke-width="1" fill="#CBC9CD">
+                    <path d="M2.01108433,2.00736845 L2.00021277,106.007368 L84.0002128,106.007368 L84.0002128,31.8971133 L55.246835,2.20661616 L2.01108433,2.00736845 Z M0.0112761248,0 L55.9803815,0 L86,31.0757723 L86,108 L0,108 L0.0112761248,0 Z" id="Path-2" fill-rule="nonzero"></path>
+                    <polygon id="Triangle" fill-rule="nonzero" points="83.0826977 29.9827586 85.0851064 31.9827586 53.9787234 31.9827586 53.9787234 0.913793103 55.9787234 2.91138733 55.9787234 29.9827586"></polygon>
+                </g>
+            </g>
+            <g id="Group" transform="translate(70.000000, 66.000000)">
+                <circle id="Oval" fill="#DE2E32" cx="15" cy="15" r="15"></circle>
+                <path d="M16.8961039,7 L16.012987,17.7474747 L13.9350649,17.7474747 L13.0779221,7 L16.8961039,7 Z M13,21.0606061 C13,20.4859679 13.1904743,20.0190815 13.5714286,19.6599327 C13.9523829,19.3007838 14.4199106,19.1212121 14.974026,19.1212121 C15.5454574,19.1212121 16.0259721,19.3007838 16.4155844,19.6599327 C16.8051968,20.0190815 17,20.4859679 17,21.0606061 C17,21.6352442 16.8051968,22.1021306 16.4155844,22.4612795 C16.0259721,22.8204283 15.5454574,23 14.974026,23 C14.4199106,23 13.9523829,22.8204283 13.5714286,22.4612795 C13.1904743,22.1021306 13,21.6352442 13,21.0606061 Z" id="!" fill="#F8F7F7"></path>
+            </g>
+        </g>
+    </g>
+</svg>

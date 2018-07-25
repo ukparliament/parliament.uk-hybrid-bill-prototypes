@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="108px" viewBox="0 0 86 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>file</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="file">
+            <polygon id="Rectangle-5" fill="#FFFFFF" points="0 0 52.8574219 0 86 31.7871094 86 106 0 106"></polygon>
+            <g id="Group" fill-rule="nonzero" fill="#CBC9CD">
+                <path d="M2.01108433,2.00736845 L2.00021277,106.007368 L84.0002128,106.007368 L84.0002128,31.8971133 L55.246835,2.20661616 L2.01108433,2.00736845 Z M0.0112761248,0 L55.9803815,0 L86,31.0757723 L86,108 L0,108 L0.0112761248,0 Z" id="Path-2"></path>
+                <polygon id="Triangle" points="83.0826977 29.9827586 85.0851064 31.9827586 53.9787234 31.9827586 53.9787234 0.913793103 55.9787234 2.91138733 55.9787234 29.9827586"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

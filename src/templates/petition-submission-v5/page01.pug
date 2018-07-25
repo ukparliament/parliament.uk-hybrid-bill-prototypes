@@ -1,0 +1,57 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Object to the HS2 bill
+
+  section
+    .container
+      br
+      .status--highlight
+        p The deadline for petitions is 5pm on Monday 8 January 2018.
+
+  section
+    .container
+      h2 Overview
+
+      p Any individual, group of individuals, organisation or business affected by the #[+link('#', 'HS2 bill')] can object to it.
+
+      p To find out more about the bill, visit the #[+link('#', 'HS2 bill website')].
+
+  section
+    .container
+      h2 Objecting to the bill
+
+      p To object to the HS2 bill you will need to download and complete our petition template.
+
+      p We will ask for your name, address and examples of how you are affected by the bill.
+
+      p The petition does not require any signatures.
+
+  section
+    .container
+      h2 Contact details
+
+      p We will ask you to tell us who should be contacted about your petition. This main contact can be you or someone else, for example a friend, family member or lawyer.
+
+      p The main contact will receive all petition communications. They will usually be invited to answer questions about it in front of the #[+link('#', 'HS2 Committee')].
+
+  section
+    .container
+      h2 After sending your petition
+
+      ul.track--alternative
+        li
+          h3.timeline--title-v5 If your petition is accepted we will ask you to pay a &pound;20 admin fee.
+        li
+          h3.timeline--title-v5 We’ll email you within 14 days about how to pay the fee.
+        li
+          h3.timeline--title-v5 We’ll review your petition and publish it on our website. This will include your name and address. We’ll then send it to the Department for Transport (DfT).
+        li
+          h3.timeline--title-v5 The DfT will email you about your petition before the committee starts discussing HS2 phase 2a petitions in Spring 2018.
+
+  section.section--major
+    .container
+      +link('page03.html', 'Send us your petition on our website')(class='btn--primary')
+      +link('page02.html', 'Send us your petition by email, post or in person')(class='btn--ghost--primary')

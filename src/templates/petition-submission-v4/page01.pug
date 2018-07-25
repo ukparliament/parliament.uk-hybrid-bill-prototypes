@@ -1,0 +1,31 @@
+extends ../../layouts/layout.pug
+
+block content
+  #content.hero.theme--deep-purple
+    .container
+      h1 Objecting to the New M404 Motorway Bill
+
+  section
+    .container
+      h2 What is the New M404 Motorway Bill?
+
+      p.lead The bill includes suggested changes to the law needed to build a new motorway in Gloucestershire. 
+
+      p.lead It also explains where the work will take place and what land will be needed for construction work. 
+
+  section
+    .container
+      h2 Objecting to the bill
+
+      p Any individual, group of individuals, organisation or business affected by the New M404 Motorway Bill can send a petition to disagree with it. Petitioning against a bill does not require any signatures.
+
+      p To find out if you’re affected visit the #[+link('#', 'New M404 Motorway Bill website')].
+
+      p The deadline for petitions is 5pm on 3 December 2017.
+
+      br
+
+  section
+    .container#postoption
+      +link('page02.html', 'Start a petition on our website')(class='btn--primary')
+      +link('page01.html#postoption', 'Submit a petition by email, post or in person')(class='btn--ghost--primary')

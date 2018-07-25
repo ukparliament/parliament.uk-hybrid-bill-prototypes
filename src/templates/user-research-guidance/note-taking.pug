@@ -1,0 +1,93 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.hero.theme--success
+    .container
+      h1 User Research Tips
+
+  section
+    .container
+      h2 Note taking guidance
+      .status--highlight.theme--grey-4
+        ol
+          li #[+link('#general-tips', 'General tips')]
+          li #[+link('#what-we-need', 'What we are looking for')]
+          li #[+link('#example-bad-notes', 'Examples of what we are not looking for')]
+          li #[+link('#example-good-notes', 'Examples of what we are looking for')]
+
+  section
+    .container
+      h3#general-tips Some general tips
+      ul
+        li 
+          strong One thing per note!
+        li Add the participant number and prototype version (if applicable)
+        li Add the location in the journey
+        li We're looking for interesting quotes or observations
+        li Use a sharpie :)
+
+  section
+    .container
+      h3#what-we-need What we're looking for
+      ul
+        li How does the user deal with the task (success / difficulty / unable)?
+        li Is the difficulty seeing / doing / thinking?
+        li Did the user need help?
+        li Did they get it first time?
+
+  section
+    .container
+      h3#example-bad-notes Some examples of
+        u what not
+        to write!
+      .section--major
+        ul.list.list--2
+          li
+            .list--details
+              h3 No likes / dislikes / opinions on design
+              p We're not looking for what they liked or wanted or their thoughts on design-related stuff like white space, etc, unless they tell us the 'why'. We're interested in how they interpret our content or behave using the prototype. 
+          li
+            figure.image--postit
+              +image('../../images/IMG_3100.JPG', 'What not to write')
+              +image('../../images/IMG_3097.JPG', 'What not to write')
+              +image('../../images/IMG_3099.JPG', 'What not to write')
+          li
+            .list--details
+              h3 Only one item per postit
+              p More than one item per postit means more work for us to analyse later.
+          li
+            figure.image--postit
+              +image('../../images/IMG_3096.JPG', 'What not to write')
+          li
+            .list--details
+              h3 Only one item per postit
+              p More than one item per postit means more work for us to analyse later.
+          li
+            figure.image--postit
+              +image('../../images/IMG_3096.JPG', 'What not to write')
+          li
+            .list--details
+              h3 No random statements
+              p Not enough detail - it will have no meaning when we all go to analyse later.
+          li
+            figure.image--postit
+              +image('../../images/IMG_3094.JPG', 'What not to write')
+
+    section
+      .container
+        h3#example-good-notes Some examples of good note taking
+        .section--major
+          ul.list.list--2
+            li
+              .list--details
+                p Using a nice quote to desribe the difficulty they had and on which page.
+            li
+              figure.image--postit
+                +image('../../images/IMG_3098.JPG', 'Good note taking examples')
+            li
+              .list--details
+                p Describes the difficulty they had and on which page in as few words as possible.
+            li
+              figure.image--postit
+                +image('../../images/IMG_3088.JPG', 'Good note taking examples')
+                +image('../../images/IMG_3090.JPG', 'Good note taking examples')

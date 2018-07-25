@@ -1,0 +1,28 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Organisation details
+      +form('page07.html')        
+        +input--text('organisation name', 'txtOrgName', 'Organisation name')(required)
+        +input--text('address', 'txtOrgAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtOrgAddress2', 'Address line 2')
+        +input--text('post code', 'txtOrgPostCode', 'Post code')(required)
+
+
+        h3 Organisation representative's details
+        p Please choose a representative from within your business or organisation.
+        
+        +input--text('contact name', 'txtOrgName', 'Name')(required)
+        +input--text('email', 'txtOrgEmail', 'Email')(required)
+        +input--text('phone', 'txtOrgPhone', 'Phone')
+
+        br
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page03.html', 'Back')]

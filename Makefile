@@ -7,6 +7,7 @@ JAVASCRIPTS_LOC=src/javascripts
 JSON_LOC=src/json
 STYLESHEETS_LOC=src/stylesheets
 IMAGES_LOC=src/images
+DOCS_LOC=src/documents
 REPORTS_FOLDER=reports
 
 # Node module variables
@@ -24,7 +25,7 @@ PRETTY_MINI_JSON=$(PUGIN)/node_modules/pretty-mini-json/pretty-mini-json.js
 
 # Installs npm packages
 install:
-	make install -C $(PUGIN)
+	@make install -C $(PUGIN)
 
 # Deletes the public folder
 clean:
@@ -56,18 +57,26 @@ json:
 # Minifies images
 images:
 	@$(IMAGEMIN) $(PUGIN)/$(IMAGES_LOC)/* -o $(PUBLIC_FOLDER)/images
+	@$(IMAGEMIN) $(IMAGES_LOC)/* -o $(PUBLIC_FOLDER)/images
 
 # Optimises SVGs
 icons:
+	@mkdir -p $(PUBLIC_FOLDER)/icons
 	@$(SVGO) -f $(PUGIN)/$(SRC_FOLDER)/icons -o $(PUBLIC_FOLDER)/icons
+
+# Adds document files
+documents:
+	@mkdir -p $(PUBLIC_FOLDER)/documents
+	@cp $(DOCS_LOC)/* $(PUBLIC_FOLDER)/documents/
 
 # Outputs pug files to html within public folder
 templates:
 	@$(PUG) $(SRC_FOLDER)/templates -P --out $(PUBLIC_FOLDER)/templates
+	@cp $(SRC_FOLDER)/templates/petition-emails/*.html $(PUBLIC_FOLDER)/templates/petition-emails/
 
 # Runs tests on javascript files
 lint:
-	@$(ESLINT) $(JAVASCRIPTS_LOC)
+	#@$(ESLINT) $(JAVASCRIPTS_LOC)
 
 # Launches a local server
 serve: clean build
@@ -85,4 +94,4 @@ test:
 	@node $(PUGIN)/scripts/w3c.js
 
 # Builds application
-build: lint css js images icons templates json
+build: lint css js images icons templates json documents

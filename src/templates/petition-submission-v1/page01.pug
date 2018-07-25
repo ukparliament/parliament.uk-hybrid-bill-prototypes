@@ -1,0 +1,62 @@
+extends ../../layouts/layout.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Petition New Motorway Bill
+      p If you are affected by the new motorway in Gloucestershire you can make a complaint by submitting a petition.
+
+  section
+    .container
+      h2 Find out if you're affected
+      p See if you will be affected by the motorway in Gloucestershire by reading the #[+link('#', 'New Motorway Bill')].
+
+  section
+    .container
+      h2 Submission deadline
+      .status--highlight.theme--caution
+        p The deadline for petitions is 3 November 2017.
+
+  section
+    .container
+      h2 How to petition online
+      ol.list--pipe
+        li
+          .list--details
+            h3 1. Read guidelines
+            p Make sure you have read our #[+link('#', 'submission guidelines')] before your submit your petition.
+        li
+          .list--details
+            h3 2. Complete petition
+            p #[+link('#', 'Download form')] and fill out your information.
+        li
+          .list--details
+            h3 3. Submit petition online
+            p Once you have completed your petition form you can #[+link('#submitOnline', 'submit online')].
+        li
+          .list--details
+            h3 4. Pay for petition
+            p If your petition is accepted, a one off payment of £20.00 will be required to officially process your submission.
+
+      br#submitOnline
+      .status--highlight
+        +form('page02.html')
+          +fieldset
+            +radio--checkbox('checkbox', 'terms-start', 'chkSteps', 'I have read the submission guidelines & I am ready to submit my petition online')(data-submit='disabled', required)
+            +radio--checkbox('checkbox', 'terms-payment', 'chkPayment', 'I understand that payment for my petition is required')(data-submit='disabled', required)
+            br
+            +button('Submit Petition', 'btn--primary', 'submit')
+
+  section
+    .container
+      h2 Alternative ways to petition
+
+      h3 By email
+      ul
+        li Read our #[+link('#', 'submission guidelines')] and download the #[+link('#', 'petition form')].
+        li Complete and email your petition to #[+link('#', 'BillPetition@parliament.uk')]
+
+      h3 By post
+      ul
+        li Read our #[+link('#', 'submission guidelines')] and download the #[+link('#', 'petition form')].
+        li Complete and post your petition to House of Commons, London, SW1A 0AA

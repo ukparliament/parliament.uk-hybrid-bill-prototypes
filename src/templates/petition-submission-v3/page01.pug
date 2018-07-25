@@ -1,0 +1,29 @@
+extends ../../layouts/layout.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Petitioning Motorway Bill
+
+  section
+    .container
+      h2 What is the New Motorway Bill
+      p The bill includes suggested changes to the law needed to build a new motorway in Gloucestershire. It also explains where the work will take place and what land will be needed for construction work.
+
+  br
+
+  section
+     .container
+       +dropdownToggle("How do I know if I will be affected?")
+        p To find out if you're affected visit the #[+link('#', 'New Motorway Bill')] website.
+
+  section
+     .container
+       +dropdownToggle("I would like to submit a petition")
+         p If you are affected by the bill and want to object to it, you or someone #[+link('guidance.html#rep-info', 'representing')] you, can do so by sending us a petition.
+         p #[+link('page02.html', 'I would like to submit a petition')(class='btn--primary')]
+
+  section
+    .container
+      h3 Help and Support
+      p For more information e-mail #[+link('#', 'petition@parliament.uk')] or phone 020 7219 3000

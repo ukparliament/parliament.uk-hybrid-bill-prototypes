@@ -1,0 +1,39 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Representative's details
+      +form('page06.html')
+        +input--text('name', 'txtAgtName', 'Full name')(required)
+        +input--text('address', 'txtAgtAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtAgtAddress2', 'Address line 2')
+        +input--text('post code', 'txtAgtPostCode', 'Post code')(required)
+        +input--text('email', 'txtAgtEmail', 'Email address')(required)
+        +input--text('phone', 'txtAgtPhone', 'Telephone number')
+
+        br
+        p Please provide contact details for a member of the group you are representing.
+        
+        +input--text('name', 'txtGroupName', 'Group name (optional)')
+        +input--text('name', 'txtName', 'Full name')(required)
+        +input--text('address', 'txtAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtAddress2', 'Address line 2')
+        +input--text('post code', 'txtPostCode', 'Post code')(required)
+        +input--text('email', 'txtEmail', 'Email address')(required)
+        +input--text('phone', 'txtPhone', 'Telephone number')
+
+        br
+        p Who should be contacted about this petition?
+
+        +radio--checkbox('checkbox', 'contact-agt', 'chkAgentCnt', 'You')
+        +radio--checkbox('checkbox', 'contact-grp', 'chkGrpCnt', 'Group contact')
+
+        br
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page03.html', 'Back')]

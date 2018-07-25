@@ -1,0 +1,22 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Your details
+      +form('page07.html')
+        +input--text('name', 'txtName', 'Full name')(required)
+        +input--text('address', 'txtAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtAddress2', 'Address line 2')
+        +input--text('post code', 'txtPostCode', 'Post code')(required)
+        +input--text('email', 'txtEmail', 'Email')(required)
+        +input--text('phone', 'txtPhone', 'Phone')
+      
+        br
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page03.html', 'Back')]

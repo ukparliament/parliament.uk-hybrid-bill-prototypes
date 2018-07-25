@@ -1,0 +1,23 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+      
+  section
+    .container
+      h2 Upload your petition
+
+      h3 File upload requirements
+
+      ul
+        li Word Document (.doc/.docx format only)
+        li 2Mb file size limit
+        li No other media types (e.g. pictures or video files)
+
+      +form('page08.html')
+        .block--border__bottom
+          +input--file('file-upload', 'fileUpload', 'Upload petition', 'btn--primary')(required)
+        
+        +button('Next', 'btn--primary')

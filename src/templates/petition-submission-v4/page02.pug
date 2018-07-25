@@ -1,0 +1,48 @@
+extends ../../layouts/layout.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Send a petition
+
+  section
+    .container
+      br
+      .status--highlight
+        p The deadline for petitions is 5pm on 3 December 2017.
+
+  section
+    .container
+      h2 Overview
+
+      p.lead To petition the New M404 Motorway Bill you need to give examples of how it affects you.
+
+      h3 Main Contact
+
+      p.lead We will ask you to tell us who should be contacted about your petition.  This can be you or someone else, for example a family member or lawyer.
+
+      p.lead Whether it’s you or someone else, this main contact will receive all petition communications and usually be invited to discuss the objections with a committee of MPs.
+
+      p.lead If you don’t want to meet the committee in person you can send a written statement instead.
+
+      h3 Fee
+
+      p.lead If your petition is accepted we will ask you to pay a £20 petition fee.
+
+  section
+    .container
+      .block--border__bottom
+        h2 How long it takes
+  
+        ul.track--alternative
+          li
+            h5 Once you’ve submitted your petition, we will email you in 14 days about how to pay your £20 petition fee.
+          li
+            h5 We will review your petition and publish it, with your name and address, on the UK Parliament website. We will then send it to the Department for Transport (DfT).
+          li
+            h5 The DfT will email you about your petition before the committee starts discussing the New M404 Motorway Bill petitions in Spring 2018.
+
+      .box--holder
+        +link('page01.html', 'Back')
+        span.btn--align-v4
+          +link('page03.html', 'Next')(class="btn--primary")

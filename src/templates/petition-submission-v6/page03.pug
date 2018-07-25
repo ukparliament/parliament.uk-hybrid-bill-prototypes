@@ -1,0 +1,68 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Writing your petition - online
+        span.sr-only.
+        span Object to the High Speed Rail (West Midlands – Crewe) Bill
+
+      h2.typography--light Step 1 of 5
+
+  section
+    .container
+
+      div(data-browser='javascript')
+        br
+        .status--highlight.theme--caution
+          p JavaScript is currently switched off in your browser. Switch it on for a better experience.
+
+      h2 To write your petition
+
+      ol
+        li download and save the petition template to your device
+        li complete the petition template
+        li save your completed template
+        li click the link at the end of your template to continue the process
+        
+      p We’ll ask you to upload your completed template later.
+      
+      ol.list--pipe__deep
+        li
+          .card--large
+            figure.svg--icon.svg--file__word
+              include ../../icons/file.svg
+            .card__details
+              h3 Petition template
+              +buttonLink('../../documents/HS2-Phase-2a-Petition-Template-Online.doc', 'Download template as Word document', 'btn--primary', 'download')
+                include ../../icons/download.svg
+              p If you need a different format, email #[+link('mailto:prbohoc@parliament.uk', 'prbohoc@parliament.uk')] or phone #[+link('tel:02072193250', '020 7219 3250')].
+
+  section#complete-petition.section--major
+    .container
+      h2.typography--light Have you completed your petition template?
+
+      +form(action='page04.html')
+        .block--border__bottom(data-dropdown='holder')
+          +fieldset
+            +radio--checkbox__inline('radio', 'petition-check', 'petition-check-yes', 'Yes')(data-dropdown='switch')
+            +radio--checkbox__inline('radio', 'petition-check', 'petition-check-no', 'No')(checked, data-submit='disabled')
+
+          div(data-dropdown-content='show')
+            .status--highlight.theme--caution
+              p Complete your petition template before you continue
+
+          div(data-browser='cookies')
+            br
+            .status--highlight.theme--warning
+              p #[+link('https://beta.parliament.uk/meta/cookie-policy', 'Cookies')] are currently blocked. Allow all cookies to continue.
+              p If you don’t want to allow all cookies, you can #[+link('page02.html', 'petition by email, post or in person')].
+
+        +button('Next', 'btn--primary', 'submit')
+
+      p #[+link('page01.html', 'Back')]
+
+      br
+      .block.accent--mint
+        h3 Help and support
+        p For more information email #[+link('mailto:prbohoc@parliament.uk', 'prbohoc@parliament.uk')] or phone #[+link('tel:02072193250', '020 7219 3250')]

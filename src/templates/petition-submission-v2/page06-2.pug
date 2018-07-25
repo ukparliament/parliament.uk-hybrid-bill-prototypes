@@ -1,0 +1,33 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Representative's details
+      +form('page07.html')
+        +input--text('name', 'txtAgtName', 'Full name')(required)
+        +input--text('address', 'txtAgtAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtAgtAddress2', 'Address line 2')
+        +input--text('post code', 'txtAgtPostCode', 'Post code')(required)
+        +input--text('email', 'txtAgtEmail', 'Email')(required)
+        +input--text('phone', 'txtAgtPhone', 'Phone')
+
+        h2 Group contact's details
+        p Please provide contact details for a member of the group you are representing.
+
+        +input--text('group', 'txtGroupName', 'Group name (optional)')
+        +input--text('name', 'txtName', 'Full name')(required)
+        +input--text('address', 'txtAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtAddress2', 'Address line 2')
+        +input--text('post code', 'txtPostCode', 'Post code')(required)
+        +input--text('email', 'txtEmail', 'Email')(required)
+        +input--text('phone', 'txtPhone', 'Phone')
+
+        br
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page04.html', 'Back')]

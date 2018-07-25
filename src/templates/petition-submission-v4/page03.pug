@@ -1,0 +1,25 @@
+extends ../../layouts/layout.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Writing your petition
+      p.lead Step 1 of 5 - Petition the #[+link('#', 'M404 Motorway Bill')]
+
+  section
+    .container
+      .block--border__bottom
+
+        br
+        p.lead To write your petition download and complete the petition template. 
+
+        p.lead We’ll ask you to upload your completed version later.
+        br
+
+        +link('../../documents/bill-petition-template.docx', 'Download template as word document')(class='btn--primary')
+        +link('../../documents/bill-petition-template.odt', 'Download as .odt file')(class='btn--ghost--primary')
+
+      .box--holder
+        +link('page02.html', 'Back')
+        span.btn--align-v4
+          +link('page04.html', 'Next')(class="btn--primary")

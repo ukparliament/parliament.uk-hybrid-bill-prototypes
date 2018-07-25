@@ -1,0 +1,61 @@
+extends ../../layouts/layout.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Petition the Motorway Bill
+
+  section
+    .container
+      br
+      .status--highlight.theme--caution
+        p The deadline for petitions is 5pm on 3 November 2017.
+
+  section
+    .container
+      h2 Before you send your petition
+      p Before you petition the New Motorway Bill you should:
+      ol.list--pipe
+        li
+          .list--details
+            p 1. read the send a #[+link('guidance.html', 'petition guidelines')(target='_blank')].
+        li
+          .list--details
+            p 2. download and complete the #[+link('../../documents/bill-petition-template.docx', 'petition template')].
+        li
+          .list--details
+            p 3. if your petition is accepted, a <b>payment of £20</b> will be required to process your submission.
+
+      br
+      .status--highlight
+        +form('page03.html')
+          +fieldset
+            +radio--checkbox('checkbox', 'terms-start', 'termsStart', 'I have read and understood all of the above and am happy to proceed')(data-submit='disabled')
+          br
+          +button('Start petition', 'btn--primary', 'submit')
+
+  section
+    .container
+      h2 Other ways to send your petition
+
+      h3 By email
+      ul
+        li read the #[+link('guidance.html', 'submission guidelines')] and download the #[+link('../../documents/bill-petition-template.docx', 'petition template')].
+        li complete the template and email to #[+link('#', 'BillPetition@parliament.uk')]
+
+      h3 By post
+      ul
+        li read the #[+link('guidance.html', 'submission guidelines')] and download the #[+link('../../documents/bill-petition-template.docx', 'petition template')].
+        li complete the template and post to House of Commons, London, SW1A 0AA
+        
+      h3 In person
+      ul
+        li To arrange to give us your petition in person call us on 020 7219 3250
+      
+    section
+      .container
+        h2 Help and Support
+        p For more information e-mail #[+link('#', 'petition@parliament.uk')] or phone 020 7219 3000
+    
+          br
+          p #[+link('page01.html', 'Back')]

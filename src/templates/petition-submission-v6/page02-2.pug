@@ -1,0 +1,40 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Writing your petition - group of individuals
+        span.sr-only.
+        span Object to the High Speed Rail (West Midlands – Crewe) Bill
+
+      h2.typography--light Step 2 of 2
+
+  section.section--primary
+    .container
+      h2.sr-only How to write your petition
+      p To write your petition, download and complete the petition template.
+      p You can send your completed version to us by email, post or in person.
+      
+      h3 Send by email
+      p Email your completed petition template to #[+link('mailto:prbohoc@parliament.uk', 'prbohoc@parliament.uk')].
+      
+      h3 Send by post
+      p Post your completed petition template to Hybrid Bills Office, Houses of Parliament, London, SW1A 0AA.
+      
+      h3 Send in person
+      p Call #[+link('tel:02072193250', '020 7219 3250')] to arrange a time to deliver your completed petition template.
+
+      .section--major
+        ol.list--pipe__deep
+          li
+            .card--large
+              figure.svg--icon.svg--file__word
+                include ../../icons/file.svg
+              .card__details
+                h3 Petition template
+                +buttonLink('../../documents/HS2-Phase-2a-Petition-Pack-Group-Of-Individuals.doc', 'Download template as Word document', 'btn--primary', 'download')
+                  include ../../icons/download.svg
+                p If you need a different format, email #[+link('mailto:prbohoc@parliament.uk', 'prbohoc@parliament.uk')] or phone #[+link('tel:02072193250', '020 7219 3250')].
+
+        h2 Bill updates
+        p For news and updates on the Bill, visit the  #[+link('http://www.parliament.uk/business/committees/committees-a-z/commons-select/high-speed-rail-west-midlands-crewe-bill-select-committee-commons', 'High Speed Rail (West Midlands – Crewe) Bill Committee website')(target='_blank')]#[span.sr-only (This link will open in a new window)].

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="48px" viewBox="0 0 38 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/ download-blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/-download-blue" fill-rule="nonzero" fill="#2B57AB">
+            <g id="Group">
+                <polygon id="Line" points="37 44 1 44 1 50 37 50"></polygon>
+                <path d="M16,0 L16,29.7 L4.4,18.8 L0.3,23.2 L17,38.8 C17.6,39.3 18.3,39.6 19,39.6 C19.7,39.6 20.5,39.3 21,38.8 L37.6,23.3 L33.5,18.9 L22,29.7 L22,0 L16,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

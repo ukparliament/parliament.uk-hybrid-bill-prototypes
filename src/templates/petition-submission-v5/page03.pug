@@ -1,0 +1,25 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Writing your petition
+      p.lead Step 1 of 5
+
+  section.section--major
+    .container
+      p To write your petition download and complete the petition template. 
+
+      p We’ll ask you to upload your completed version later.
+
+  section
+    .container
+      +link('../../documents/bill-petition-template.docx', 'Download template as Word document - DOCX')(class='btn--primary')
+      +link('../../documents/bill-petition-template.odt', 'Download in alternative format')(class='btn--ghost--primary')
+
+  section.section--primary
+    .container
+      .box--holder__bordered
+        +link('page04.html', 'Next')(class='btn--primary btn--large')
+
+      p #[+link('page01.html', 'Back')]

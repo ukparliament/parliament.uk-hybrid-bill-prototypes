@@ -1,0 +1,23 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Who is submitting this petition?
+      +form(id='submitterType' action='page05-1.html')
+        +fieldset('Who are you submitting a petition for?', 'sr-only')
+          ol.list--block
+            li
+              +radio--checkbox__verbose('radio', 'submitter-type', 'ind', 'You are submitting a petition for yourself.', 'Individual')(data-route='page05-1.html', checked)
+            li
+              +radio--checkbox__verbose('radio', 'submitter-type', 'grp', 'You are submitting a petition for a group of people.', 'Group of individuals')(data-route='page05-2.html')
+            li
+              +radio--checkbox__verbose('radio', 'submitter-type', 'org', 'You are submitting a petition for a business or organisation.', 'Organisation')(data-route='page05-3.html')
+
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page02.html', 'Back')]

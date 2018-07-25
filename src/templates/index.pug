@@ -1,36 +1,31 @@
-extends ../layouts/layout.pug
+extends ../layouts/layout-beta.pug
 
 block content
-  #content.hero.theme--white.accent--caution
+  #content.hero.theme--white
     .container
-      // Page Title
-      h1 Pugin
-        span Composition
-      p Welcome to Pugin Composition, the UK Parliament Bootstrap Node Application. This application inherits #[+link('https://github.com/ukparliament/parliament.uk-pugin', 'Pugin')]; the UK Parliament brand, its components and mixins enabling rapid prototyping and consistent branding across Parliamentary projects.
-
+      h1 Hybrid bill prototypes
+      p Static HTML prototyping of Parliamentary hybrid bill web services.
 
   section
     .container
-      h2 List Block
-      p Examples illustrating rendering a list block and list pipe.
+      h2 Current hybrid bills prototypes
+      ul
+        li #[+link('/templates/petition-submission-ap-v1/index.html', 'Additional provision petition submission (Version 1)')]
+        li #[+link('/templates/petition-submission-v6/index.html', 'Hybrid bill petition submission (Version 6)')]
+        li #[+link('/templates/petition-emails/index.html', 'Hybrid bill email templates')]
 
-      ol.list--block
-        +list--block__generic('Heading for awesome list block item', 'This list item is using the +list--block__generic mixin.')
-        li
-          figure
-            +link('#', '')(tabIndex=-1)
-              picture
-                +image('http://via.placeholder.com/100x100', 'image')
-          .list--details
-            h2 #[+link('#', 'Heading for awesome list block item')]
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas neque vel orci pharetra, maximus mattis nibh cursus.
+  section
+    .container
+      h2 User research guidance
+      ul
+        li #[+link('/templates/user-research-guidance/note-taking.html', 'Note Taking Guidance')]
 
-      h2 Pipe list
-      ol.list--pipe
-        +list--block__generic('Heading for awesome list pipe item', 'This list item is using the +list--block__generic mixin')
-        li
-          figure
-            +image('http://via.placeholder.com/100x100', 'image')
-          .list--details
-            h2 #[+link('#', 'Heading for awesome list pipe item')]
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas neque vel orci pharetra, maximus mattis nibh cursus.
+  section
+    .container
+      h2 Archived hybrid bills prototypes1
+      ul
+        li #[+link('/templates/petition-submission-v1/page01.html', 'Hybrid bill petition submission (Version 1)')]
+        li #[+link('/templates/petition-submission-v2/page01.html', 'Hybrid bill petition submission (Version 2)')]
+        li #[+link('/templates/petition-submission-v3/page01.html', 'Hybrid bill petition submission (Version 3)')]
+        li #[+link('/templates/petition-submission-v4/page01.html', 'Hybrid bill petition submission (Version 4)')]
+        li #[+link('/templates/petition-submission-v5/page01.html', 'Hybrid bill petition submission (Version 5)')]

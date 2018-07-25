@@ -1,0 +1,42 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Representative's details
+      +form('page06.html')
+        +input--text('name', 'txtAgtName', 'Full name')(required)
+        +input--text('address', 'txtAgtAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtAgtAddress2', 'Address line 2')
+        +input--text('post code', 'txtAgtPostCode', 'Post code')(required)
+        +input--text('email', 'txtAgtEmail', 'Email address')(required)
+        +input--text('phone', 'txtAgtPhone', 'Telephone number')
+
+        br
+        p Please provide details for the organisation you are representing.
+
+        +input--text('organisation name', 'txtOrgName', 'Organisation name')(required)
+        +input--text('address', 'txtOrgAddress1', 'Organisation Address line 1')(required)
+        +input--text('address', 'txtOrgAddress2', 'Organisation Address line 2')
+        +input--text('post code', 'txtOrgPostCode', 'Organisation Post code')(required)
+
+        br
+
+        +input--text('contact name', 'txtOrgName', 'Contact name')(required)
+        +input--text('email', 'txtOrgEmail', 'Contact Email address')(required)
+        +input--text('phone', 'txtOrgPhone', 'Contact Telephone number')
+
+        br
+        p Who should be contacted about this petition?
+
+        +radio--checkbox('checkbox', 'contact-agt', 'chkAgentCnt', 'You')
+        +radio--checkbox('checkbox', 'contact-org', 'chkOrgCnt', 'Organisation')
+
+        br  
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page03.html', 'Back')]

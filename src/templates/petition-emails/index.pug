@@ -1,0 +1,26 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Hybrid bill email templates
+
+      ul.list--bullet
+        li #[+link('email-1-1.html', 'Submission confirmation - Petitioner (external)')]
+        li #[+link('email-1-2.html', 'Submission checked - Petitioner (external)')]
+        li #[+link('email-1-3.html', 'Submission paid - Petitioner (external)')]
+
+      ul.list--bullet
+        li #[+link('email-2-1.html', 'Submission confirmation - Main Contact (external)')]
+        li #[+link('email-2-2.html', 'Submission checked - Main Contact (external)')]
+        li #[+link('email-2-3.html', 'Submission paid - Main Contact (external)')]
+
+      ul.list--bullet
+        li #[+link('email-3-1.html', 'Submission confirmation - Petitioner (internal)')]
+        li #[+link('email-3-2.html', 'Submission checked - Petitioner (internal)')]
+        li #[+link('email-3-3.html', 'Submission paid - Petitioner (internal)')]
+
+      ul.list--bullet
+        li #[+link('email-4-1.html', 'Submission confirmation - Main Contact (internal)')]
+        li #[+link('email-4-2.html', 'Submission checked - Main Contact (internal)')]
+        li #[+link('email-4-3.html', 'Submission paid - Main Contact (internal)')]

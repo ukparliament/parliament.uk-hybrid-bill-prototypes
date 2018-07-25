@@ -1,0 +1,49 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Business / Organisation details
+      +form('page07.html')
+        +input--text('organisation name', 'txtOrgName', 'Business / Organisation name')(required)
+        +input--text('address', 'txtOrgAddress1', 'Business / Organisation Address line 1')(required)
+        +input--text('address', 'txtOrgAddress2', 'Business / Organisation Address line 2')
+        +input--text('post code', 'txtOrgPostCode', 'Business / Organisation Post code')(required)
+
+        br
+        p Please specify a representative for your business or organisation.
+
+        +input--text('contact name', 'txtOrgName', 'Contact name')(required)
+        +input--text('email', 'txtOrgEmail', 'Contact Email address')(required)
+        +input--text('phone', 'txtOrgPhone', 'Contact Telephone number')
+
+        br
+        .status--highlight.theme--grey-4
+          +radio--checkbox('checkbox', 'agent-rep', 'toggleContent', 'Do you have an external representative?')
+          +dropdownToggle("What is a representative?")
+            p You can either represent yourself or ask someone to act as your representative, to act on your behalf in all matters relating to the petition, including arguing your case before the committee.
+
+        #contentPane
+          h2 Representative's details
+
+          +input--text('name', 'txtAgtName', 'Full name')
+          +input--text('address', 'txtAgtAddress1', 'Address line 1')
+          +input--text('address', 'txtAgtAddress2', 'Address line 2')
+          +input--text('post code', 'txtAgtPostCode', 'Post code')
+          +input--text('email', 'txtAgtEmail', 'Email address')
+          +input--text('phone', 'txtAgtPhone', 'Telephone number')
+
+          br
+          p Who should be contacted about this petition?
+
+          +radio--checkbox('checkbox', 'contact-ind', 'chkIndCnt', 'You')
+          +radio--checkbox('checkbox', 'contact-agt', 'chkAgentCnt', 'Your representative')
+
+        br
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page03.html', 'Back')]

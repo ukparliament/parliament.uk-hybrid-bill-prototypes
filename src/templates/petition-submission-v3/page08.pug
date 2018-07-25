@@ -1,0 +1,34 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Terms &amp; Conditions
+
+      p I understand that:
+      ol
+        li a copy of this petition, with my name and address will be published on UK Parliament’s website.  
+        li a copy of this petition and information provided in the online form will be:
+        ul
+          li kept in the Private Bill Office and as a record in the Parliamentary Archives
+          li will be available to the Parliamentary Agent responsible for the bill once the petition has been accepted by the Private Bill Office who may contact me directly regarding the petition.  
+        li the personal information I’ve supplied may be kept in a database by both Private Bill Offices. Communications may also be stored in databases to keep track of information I have given or received. This information may be shared between the Private Bill Offices.  
+        li Private Bill Office staff may be in touch with any of the named petitioners to verify the information provided.
+
+      p I agree to observe the orders and practice of the House of Commons and any #[+link('https://publications.parliament.uk/pa/cm201718/cmstords/pb2017/pvtbs40.htm', 'Speakers rules')(target='_blank')] that relate to proceedings on this petition.
+      p The information I have provided in the petition and online form is accurate
+      p If I have filled in the form on behalf of a petitioner or petitioners as a representative or as a co-petitioner, I have been authorised to do so.  
+
+      +form('page09.html')
+        .status--highlight
+          +radio--checkbox('checkbox', 'chk-terms', 'enableSubmit', 'I agree and am happy to proceed with my submission.')(required, data-submit='disabled')
+          +radio--checkbox('checkbox', 'chk-updates', 'chkUpd', 'I would like to receive updates on my submission via email.')
+          br
+          +button('Submit petition', 'btn--primary', 'submit')
+
+      br
+      p #[+link('page07.html', 'Back')]

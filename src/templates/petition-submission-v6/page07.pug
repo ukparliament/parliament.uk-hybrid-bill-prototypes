@@ -1,0 +1,48 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Terms and conditions
+        span.sr-only.
+        span Object to the High Speed Rail (West Midlands – Crewe) Bill
+
+      h2.typography--light Step 5 of 5
+
+  section
+    .container
+        h2 Personal information
+
+        p A copy of this petition and information provided in the online form will be:
+
+        ul.list--bullet
+          li kept in the #[+link('http://www.parliament.uk/about/how/laws/bills/private/office/', 'Private Bill Office')(target='_blank')]#[span.sr-only (This link will open in a new window)] and as a record in the #[+link('http://www.parliament.uk/business/publications/parliamentary-archives/', 'Parliamentary Archives')(target='_blank')]#[span.sr-only (This link will open in a new window)].
+
+          li sent to the #[+link('https://www.gov.uk/government/organisations/department-for-transport', 'Department for Transport')(target='_blank')]#[span.sr-only (This link will open in a new window)] and #[+link('https://www.gov.uk/government/organisations/high-speed-two-limited', 'High Speed Two (HS2) Limited')(target='_blank')]#[span.sr-only (This link will open in a new window)] after the petition has been received by the Private Bill Office.
+
+        p We will publish your petition on UK Parliament’s website. This will include your name and address.
+
+        p The personal information you have provided may be kept in a database by both Private Bill Offices.
+
+  section
+    .container
+        h2 Communications
+              
+        p Private Bill Office staff may call or email any of the people named in the petition to verify the information provided. 
+
+        p Communications may be stored in databases to keep track of information you have given or received. This information may be shared between the Private Bill Offices.
+
+  section
+    .container
+      h2 Consent and confirmation
+
+      p The information you have provided in the petition and online form is accurate.
+      
+      p If you have completed the form on behalf of an individual, a group of individuals, an organisation, or a group of organisations, you have been authorised to do so.
+
+      +form(action='page08.html')
+        .block--border__bottom.v6-check
+          +fieldset
+            +radio--checkbox('checkbox', 'terms-check', 'termsCheck', 'I agree to the terms and conditions')(data-submit='disabled')
+
+        +button('Send petition', 'btn--primary', 'submit')

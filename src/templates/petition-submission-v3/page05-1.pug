@@ -1,0 +1,43 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+
+  section
+    .container
+      h2 Your details
+      +form('page07.html')
+        +input--text('name', 'txtName', 'Full name')(required)
+        +input--text('address', 'txtAddress1', 'Address line 1')(required)
+        +input--text('address', 'txtAddress2', 'Address line 2')
+        +input--text('post code', 'txtPostCode', 'Post code')(required)
+        +input--text('email', 'txtEmail', 'Email address')(required)
+        +input--text('phone', 'txtPhone', 'Telephone number')
+              
+        br
+        .status--highlight.theme--grey-4
+          +radio--checkbox('checkbox', 'agent-rep', 'toggleContent', 'Do you have a representative?')
+          +dropdownToggle("What is a representative?")
+            p You can either represent yourself or ask someone to act as your representative, to act on your behalf in all matters relating to the petition, including arguing your case before the committee.
+
+        #contentPane
+          h2 Representative's details
+
+          +input--text('name', 'txtAgtName', 'Full name')
+          +input--text('address', 'txtAgtAddress1', 'Address line 1')
+          +input--text('address', 'txtAgtAddress2', 'Address line 2')
+          +input--text('post code', 'txtAgtPostCode', 'Post code')
+          +input--text('email', 'txtAgtEmail', 'Email address')
+          +input--text('phone', 'txtAgtPhone', 'Telephone number')
+
+          p Who should be contacted about this petition?
+
+          +radio--checkbox('checkbox', 'contact-ind', 'chkIndCnt', 'You')
+          +radio--checkbox('checkbox', 'contact-agt', 'chkAgentCnt', 'Your representative')
+
+        br
+        +button('Next', 'btn--primary')
+      br
+      p #[+link('page03.html', 'Back')]

@@ -1,0 +1,37 @@
+extends ../../layouts/layout.pug
+
+block content
+  .section--primary#content
+    .container
+      h1 Petition New Motorway Bill
+      
+  section
+    .container
+      h2 Thank you for your submission.
+      .status--highlight
+        p Your petition reference number is <b>HB123XYZ</b>
+        
+      p An email with this reference number will shortly be sent to <italics>test@gmail.com</italics>. 
+
+
+  section
+    .container
+      h2 What happens next?
+      ol.list--pipe
+        li
+          .list--details
+            h3 1. Your petition is checked     
+            p We will review your petition before sending it to the Government
+        li
+          .list--details
+            h3 2. Request for payment emailed  
+            p In the next 14 days we will email you with details on how to pay your £20 petition fee.
+        li
+          .list--details
+            h3 3. The Department for Transport will contact you
+            p They will get in touch with you regarding the status of your petition.
+
+    section
+      .container
+        h3 Help and Support
+        p For more information e-mail #[+link('#', 'petition@parliament.uk')] or phone 020 7219 3000

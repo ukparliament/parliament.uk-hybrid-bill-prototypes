@@ -1,0 +1,30 @@
+extends ../../layouts/layout.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Upload your completed template
+      p.lead Step 4 of 5 - Petition the #[+link('#', 'M404 Motorway Bill')]
+
+  section
+    .container
+      h2 Uploaded file must be
+
+      ul
+        li in the same format as the #[+link('../../documents/bill-petition-template.docx', 'petition template')]
+        li less than 20 MB in size
+        li file type: doc, docx, rtf, txt, ooxml, odt or PDF
+
+  section
+    .container
+      .block--border__bottom
+        .file--upload
+          p.file--upload-icon
+          h3#file-uploaded-txt Attach your petition template
+          +input--file('file-uploader', 'file-upload', 'Click here to upload your petition', 'file--uploader')
+        p.file--uploaded#file-uploaded No file(s) selected
+
+  section
+    .container
+      span.btn--align-v4
+        +link('page07.html', 'Next')(class="btn--primary")

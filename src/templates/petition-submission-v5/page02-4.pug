@@ -1,0 +1,31 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.hero.theme--grey-4
+    .container
+      h1 Writing your petition - group of organisations
+      p.lead Step 2 of 2
+
+  section.section--primary
+    .container
+      p To write your petition download and complete the petition template.
+      p You can send your completed version to us by email, post or in person.
+      
+      h2 Send by email
+      p Email your completed petition template to #[+link('#', 'petition@parliament.uk')].
+      
+      h2 Send by post
+      p Post your completed petition template to Hybrid Bills Office, Houses of Parliament, London, SW1A 0AA.
+      
+      h2 Send in person
+      p Call 020 7219 3000 to arrange a time to deliver your completed petition template.
+
+  section.section--major
+    .container
+      +link('../../documents/bill-petition-template.docx', 'Download template as Word document')(class='btn--primary')
+      +link('../../documents/bill-petition-template.odt', 'Download in alternative format')(class='btn--ghost--primary')
+
+  section
+    .container
+      .box--holder__bordered
+        p #[+link('page02.html', 'Back')]
