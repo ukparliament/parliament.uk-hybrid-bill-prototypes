@@ -129,23 +129,27 @@ UK_Parliament.enableSubmit();
 UK_Parliament.radioRouting = function () {
   if (document.getElementById('submitterType')) {
 
-    var radios = document.querySelectorAll('input[type=radio]');
+    var form = document.getElementById('submitterType');
 
-    for (var i = 0; i < radios.length; i++) {
-      radios[i].onclick = function () {
-        var route = getCheckedRadioIndex(radios);
-        document.getElementById('submitterType').action = route;
+    form.onsubmit = function (e) {
+      e.preventDefault();
+
+      // Grab name of radio group and then collection of same name
+      var radiosArray = document.querySelectorAll('input[type=radio]');
+
+      // function to set submit button type from radio selection
+      getSubmitterType = function (radio) {
+        if (radio.checked) {
+          form.action = radio.dataset.route;
+          form.submit();
+        }
       };
-    }
-  }
 
-  function getCheckedRadioIndex(radios) {
-    for (var i = 0; i < radios.length; i++) {
-      if (radios[i].checked) {
-        var r = radios[i].dataset.route;
-        return r;
+      // Loop radio group and grab clicked radio button
+      for (var x = 0; x < radiosArray.length; x++) {
+        getSubmitterType(radiosArray[x]);
       }
-    }
+    };
   }
 };
 
