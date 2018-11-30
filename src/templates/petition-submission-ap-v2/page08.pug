@@ -1,0 +1,62 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Thank you for your petition
+        span.sr-only.
+        span Object to Additional Provision 2 of the High Speed Rail (West Midlands to Crewe) Bill
+
+      br
+      .status--highlight
+        p.lead The information on this page will be sent to 
+          i 'petitioner-email-address@domain.com'
+          |  in the next 15 minutes.
+
+  section
+    .container
+      h2 What happens next
+
+      ul.track--alternative
+        li
+          h3.typography--light We'll email you within 14 days about how to pay the &pound;20 admin fee, unless you paid it when objecting to the original bill
+        li
+          h3.typography--light We'll publish your petition on our website. This will include your name and address.
+        li
+          h3.typography--light We’ll send your petition to HS2 Ltd, who may contact you to discuss it.
+        li
+          h3.typography--light We'll also send your petition to the Department for Transport (DfT). They can challenge it if they don't believe you are affected by additional provision one.
+        li
+          h3.typography--light You will usually be invited to give evidence to the committee about your petition. Hearings are scheduled for spring/summer 2019.
+
+  section
+    .container
+      h2 Withdrawing your petition
+
+      p You can withdraw your petition by emailing us at #[+link('mailto:prbohoc@parliament.uk', 'prbohoc@parliament.uk')].
+
+      p Anyone named on a petition can withdraw from the petition, leaving the remaining petitioners to continue with it.
+
+      p Withdrawn petitions will not be removed from the website.
+
+  section
+    .container
+      h2 Changing contact information
+
+      p If you want to change the main contact for your petition call us on #[+link('tel:02072193250', '020 7219 3250')].
+
+  section
+    .container
+      h2 Give feedback
+      p Help us improve this petitioning process by completing our 
+        +link('#', 'feedback form')(target='_blank')
+          span.sr-only (This link will open in a new window)
+        | .
+
+  section
+    .container
+      h2 Bill updates
+      p For news and updates on the Bill, visit the  
+        +link('http://www.parliament.uk/business/committees/committees-a-z/commons-select/high-speed-rail-west-midlands-crewe-bill-select-committee-commons', 'High Speed Rail (West Midlands to Crewe) Bill Committee website')(target='_blank')
+          span.sr-only (This link will open in a new window)
+        | .

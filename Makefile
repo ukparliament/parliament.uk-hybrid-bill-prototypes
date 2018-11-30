@@ -73,6 +73,8 @@ documents:
 templates:
 	@$(PUG) $(SRC_FOLDER)/templates -P --out $(PUBLIC_FOLDER)/templates
 	@cp $(SRC_FOLDER)/templates/petition-emails/*.html $(PUBLIC_FOLDER)/templates/petition-emails/
+	@cp $(SRC_FOLDER)/templates/petition-emails-ap-v1/*.html $(PUBLIC_FOLDER)/templates/petition-emails-ap-v1/
+	@cp $(SRC_FOLDER)/templates/petition-emails-ap-v2/*.html $(PUBLIC_FOLDER)/templates/petition-emails-ap-v2/
 
 # Runs tests on javascript files
 lint:

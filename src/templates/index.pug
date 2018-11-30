@@ -10,22 +10,30 @@ block content
     .container
       h2 Current hybrid bills prototypes
       ul
-        li #[+link('/templates/petition-submission-ap-v1/index.html', 'Additional provision petition submission (Version 1)')]
-        li #[+link('/templates/petition-submission-v6/index.html', 'Hybrid bill petition submission (Version 6)')]
-        li #[+link('/templates/petition-emails/index.html', 'Hybrid bill email templates')]
+        li #[+link('/templates/petition-submission-ap-v2/index.html', 'Additional provision 2 petition submission')]
+        li #[+link('/templates/petition-emails-ap-v2/index.html', 'Additional provision 2 email templates')]
+
+
+  section
+    .container
+      h2 Archived hybrid bill prototypes
+      +dropdownToggle("Additional provision 1 petition prototypes")
+        ul
+          li #[+link('/templates/petition-submission-ap-v1/index.html', 'Additional provision 1 petition submission (Feb 2018)')]
+          li #[+link('/templates/petition-emails-ap-v1/index.html', 'Additional provision 1 email templates (Feb 2018)')]
+ 
+      +dropdownToggle("Hybrid bill petition prototypes")
+        ul
+          li #[+link('/templates/petition-submission-v1/page01.html', 'Hybrid bill petition submission (Version 1 - Aug 2017)')]
+          li #[+link('/templates/petition-submission-v2/page01.html', 'Hybrid bill petition submission (Version 2 - Sep 2017)')]
+          li #[+link('/templates/petition-submission-v3/page01.html', 'Hybrid bill petition submission (Version 3 - Sep 2017)')]
+          li #[+link('/templates/petition-submission-v4/page01.html', 'Hybrid bill petition submission (Version 4 - Oct 2017)')]
+          li #[+link('/templates/petition-submission-v5/page01.html', 'Hybrid bill petition submission (Version 5 - Nov 2017)')]
+          li #[+link('/templates/petition-submission-v6/index.html', 'Hybrid bill petition submission (Version 6 - Dec 2017)')]
+          li #[+link('/templates/petition-emails/index.html', 'Hybrid bill petition email templates (Dec 2017)')]
 
   section
     .container
       h2 User research guidance
       ul
         li #[+link('/templates/user-research-guidance/note-taking.html', 'Note Taking Guidance')]
-
-  section
-    .container
-      h2 Archived hybrid bills prototypes
-      ul
-        li #[+link('/templates/petition-submission-v1/page01.html', 'Hybrid bill petition submission (Version 1)')]
-        li #[+link('/templates/petition-submission-v2/page01.html', 'Hybrid bill petition submission (Version 2)')]
-        li #[+link('/templates/petition-submission-v3/page01.html', 'Hybrid bill petition submission (Version 3)')]
-        li #[+link('/templates/petition-submission-v4/page01.html', 'Hybrid bill petition submission (Version 4)')]
-        li #[+link('/templates/petition-submission-v5/page01.html', 'Hybrid bill petition submission (Version 5)')]
