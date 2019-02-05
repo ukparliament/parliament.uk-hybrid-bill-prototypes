@@ -202,3 +202,30 @@ span.label {
 h3 {
   margin-bottom: 18px;
 }
+
+// ***** AP2 Overides *****
+
+@mixin gamma {
+  @include fontsize(24);
+  line-height: 1.125; // 27px
+
+  @include media($medium) {
+    @include fontsize(27);
+    line-height: 1.111; // 30px
+  }
+}
+
+@mixin summary {
+  @include gamma;
+  @include typography--light;
+  margin: $base-spacing-unit-tiny 0;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 .context {
+  @include summary;
+  margin-bottom: $base-spacing-unit-extra-large;
+}

@@ -3,13 +3,14 @@ extends ../../layouts/layout-beta.pug
 block content
   #content.hero.theme--grey-4
     .container
-      h1 Individual’s details
+      h1
+        span Individual’s details
         span.sr-only.
-        span Object to Additional Provision 2 of the High Speed Rail (West Midlands to Crewe) Bill
+        span.context Object to the Second Additional Provision (AP2) to the High Speed Rail (West Midlands to Crewe) Bill
 
       h2.typography--light Step 3 of 5
 
-  section.section--primary
+  section.section--major
     .container
       h2.sr-only Complete the fields below
       +form('page06.html')
@@ -295,10 +296,10 @@ block content
 
           +input--text('address', 'txtAddress1', 'Address line 1')
           +input--text('address', 'txtAddress2', 'Address line 2 (optional)')
-          +input--text('text', 'post code', 'txtPostCode', 'Post code')(data-postcode='petitioner', class='input__sm')
+          +input--text('text', 'txtPostCode', 'Post code')(data-postcode='petitioner', class='input__sm')
           +input--text('email', 'txtEmail', 'Email')
           +radio--checkbox('checkbox', 'contact-ind', 'chkIndCnt', 'I would like to receive updates from the High Speed Rail (West Midlands to Crewe) Bill Committee') 
-          +input--text('text', 'phone', 'txtPhone', 'Phone')(class='input__md')
+          +input--text('text', 'txtPhone', 'Phone')(class='input__md')
 
           h2 Who should be contacted about this petition?
 
@@ -306,7 +307,7 @@ block content
             +radio--checkbox__inline('radio', 'representative-check', 'ind-only', 'Individual above')(checked)
             +radio--checkbox__inline('radio', 'representative-check', 'ext-rep', 'Another contact')
 
-          #repDetails
+          #repDetails.section--minor
             h3 Main contact's details
 
             +input--text('fname', 'txtRepFname', 'First name(s)')
@@ -590,10 +591,10 @@ block content
 
             +input--text('address', 'txtRepAddress1', 'Address line 1')
             +input--text('address', 'txtRepAddress2', 'Address line 2 (optional)')
-            +input--text('text', 'post code', 'txtRepPostCode', 'Post code')(class='input__sm')
+            +input--text('text', 'txtRepPostCode', 'Post code')(class='input__sm')
             +input--text('email', 'txtRepEmail', 'Email')
             +radio--checkbox('checkbox', 'contact-ind', 'chkRepIndCnt', 'I would like to receive updates from the High Speed Rail (West Midlands to Crewe) Bill Committee') 
-            +input--text('text', 'phone', 'txtRepPhone', 'Phone')(class='input__md')
+            +input--text('text', 'txtRepPhone', 'Phone')(class='input__md')
 
         +button('Next', 'btn--primary', 'submit')
 
