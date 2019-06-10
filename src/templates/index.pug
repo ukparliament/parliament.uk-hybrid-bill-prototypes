@@ -10,13 +10,16 @@ block content
     .container
       h2 Current hybrid bills prototypes
       ul
-        li #[+link('/templates/petition-submission-ap-v2/index.html', 'Additional provision 2 petition submission')]
-        li #[+link('/templates/petition-emails-ap-v2/index.html', 'Additional provision 2 email templates')]
+        li #[+link('/templates/petition-emails-ap-v3/index.html', 'Additional provision 3 email templates')]
 
 
   section
     .container
       h2 Archived hybrid bill prototypes
+      +dropdownToggle("Additional provision 2 petition prototypes")
+        ul
+          li #[+link('/templates/petition-submission-ap-v2/index.html', 'Additional provision 2 petition submission (spring/summer 2018)')]
+          li #[+link('/templates/petition-emails-ap-v2/index.html', 'Additional provision 2 email templates (spring/summer 2018)')]
       +dropdownToggle("Additional provision 1 petition prototypes")
         ul
           li #[+link('/templates/petition-submission-ap-v1/index.html', 'Additional provision 1 petition submission (Feb 2018)')]
